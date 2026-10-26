@@ -100,7 +100,7 @@ kubectl -n monitoring port-forward svc/kube-prom-grafana 3000:80
 ### 2. （待填）Pod 镜像拉取失败
 
 - **现象**：`ImagePullBackOff`
-- **定位**：
+- **定位**：网络原因，镜像名称，节点状态
 - **根因**：
 - **解决**：
 
@@ -111,12 +111,7 @@ kubectl -n monitoring port-forward svc/kube-prom-grafana 3000:80
 - **根因**：
 - **解决**：
 
-## 后续计划
 
-- [ ] 集群改为 3 节点高可用（kube-vip + stacked etcd）
-- [ ] 告警接入钉钉机器人，验证真实触达
-- [ ] 用 GitHub Actions 实现提交即构建镜像
-- [ ] 补充压测数据与监控曲线对比
 
 ## 说明
 
